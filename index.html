@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oscars</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23e84545%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2255%22>🏆</text></svg>" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo">
+                <img src="./icons/logo.svg" alt="">
+            </div>
+            <div class="mobile-nav">
+                <div class="cart">
+                    <div class="flex items-center">
+                        <img src="./icons/cart-dark.svg" alt="">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Learn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+84) 123 456 789</h5>
+                        <h6>E-mail :oscars@gmail.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>(8.00am - 12.00am)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" />
+                </svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between items-center">
+                        <div class="icons">
+                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./icons/google.svg" alt=""></a>
+                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        </div>
+
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="./icons/phone.svg" alt="">
+                                <div>
+                                    <h5>Call US: (+84) 123 456 789</h5>
+                                    <h6>E-mail : support@oscars.com</h6>
+                                </div>
+                            </div>
+                            <div class="branding">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/7/73/Academy_of_Motion_Picture_Arts_and_Sciences_logo.svg"
+                                    alt="">
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="./icons/clock.svg" alt="">
+                                <div>
+                                    <h5>Working Hours:</h5>
+                                    <h6>Mon - Sat (8.00am - 12.00am)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="#" class="active">Home</a>
+                            <a href="about.html">About us</a>
+
+                            <a href="#">Explore</a>
+                            <a href="Learn">Learn</a>
+
+                            <a href="#">Gallery</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <header class="hero flex items-center">
+                    <div class="container">
+                        <div class="welcome flex items-center">
+                            <span>Welcome to</span>
+
+                        </div>
+                        <h1>The World's Top <span>Awards</span></h1>
+                        <p>Awards for artistic and technical merit in the film industry.</p>
+                        <div>
+                            <button class="btn btn-primary">Explore</button>
+
+                        </div>
+                        <div class="hero-image">
+                            <img src="./images/ria.jpg">
+                        </div>
+                    </div>
+                </header>
+
+                <section class="top-products">
+                    <div class="container">
+                        <h1 class="section-heading ">Last year's winners</h1>
+                        <div class="slider">
+                            <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
+                            <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
+                            <div class="food-slider">
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img class="hello" src="./images/5e7efe3ad75a9b0ff9f03a94_joaquin-phoenix.jpeg"
+                                            alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h1 class="text-primary text-center">Best actor</h1>
+                                        <h2 class="text-center">Joaquin Phoenix</h2>
+                                        <h3 class="text-center"> "Joker" </h3>
+
+
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="" alt="">
+                                                <span>VIEW MORE</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img src="./images/renee.jpg" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h1 class="text-primary text-center">Best actress</h1>
+                                        <h2 class="text-center">Renee Zellweger</h2>
+                                        <h3 class="text-center"> "Judy" </h3>
+
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="" alt="">
+                                                <span>VIEW MORE</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img src="./images/parasite.jpg" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h1 class="text-primary text-center">Best Movie</h1>
+
+
+                                        <h2 class="text-center">Parasite</h2><br>
+
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="" alt="">
+                                                <span>VIEW MORE</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img class="hello" src="./images/Toy_Story_4_poster.jpg" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h1 class="text-primary text-center">Best animated feature</h1>
+                                        <h2 class="text-center">Toy Story4</h2><br>
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                        </div>
+
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="" alt="">
+                                                <span>VIEW MORE</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center btn-wrapper">
+                            <a href="View.html" class="btn btn-primary">View more</a>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <section class="latest-news">
+                    <div class="container">
+                        <h1 class="section-heading">Latest News from Blog</h1>
+                        <div class="article-wrapper">
+                            <article class="card magic-shadow-sm">
+                                <div>
+                                    <img src="./images/news1.png" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="post-meta flex items-center justify-between">
+                                        <span>Posted Wednesday, April 7, 2021 - 15:00</span>
+
+                                    </div>
+
+                                    <h2>STREET CLOSURES FOR 93RD OSCARS®</h2>
+                                    <p>To ensure public safety, support security strategies and facilitate the
+                                        production of the 93rd Oscars®, the Academy of Motion Picture Arts and Sciences
+                                        and the City of Los Angeles have finalized street closure plans around Union
+                                        Station in downtown Los Angeles.</p>
+                                </div>
+                            </article>
+                            <article class="card magic-shadow-sm">
+                                <div>
+                                    <img src="./images/news1.png" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="post-meta flex items-center justify-between">
+                                        <span>Posted Wednesday, March 24, 2021 - 12:00</span>
+
+                                    </div>
+
+                                    <h2>93RD OSCARS® PRODUCTION TEAM WELCOMES NEW TALENT AND SHOW VETERANS</h2>
+                                    <p>The Oscars® show producers Jesse Collins, Stacey Sher and Steven Soderbergh today
+                                        announced 14 key members of the production team for the 93rd Oscars®, which airs
+                                        live on ABC on Sunday, April 25, 2021.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="text-center btn-wrapper">
+                            <button class="btn btn-secondary">View All</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="subscribe">
+                    <div class="container flex items-center">
+                        <div>
+                            <img src="./images/member.jpg" alt="">
+                        </div>
+                        <div>
+                            <h1>Enter your mail for Membership</h1>
+                            <p>The Academy’s membership process is by sponsorship, not application. Candidates must be
+                                sponsored by two Academy members from the branch to which the candidate seeks admission.
+                            </p>
+                            <div class="input-wrap">
+                                <input type="email" placeholder="email@gmail.com">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-us flex">
+                    <div class="contact-info-wrapper">
+                        <h1 class="section-heading">Contact us</h1>
+                        <div class="contact-info">
+                            <div>
+                                <div>
+                                    <img src="./icons/phone-2.svg" alt="">
+                                    <div>
+                                        <span>Call us:</span>
+                                        <span>(+84) 123 456 789</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./icons/bag-2.svg" alt="">
+                                    <div>
+                                        <span>E-mail ::</span>
+                                        <span>support@oscar.com</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206253.45012861438!2d-115.31508258571672!3d36.124918453865035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20NV%2C%20USA!5e0!3m2!1sen!2sru!4v1580850940897!5m2!1sen!2sru"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="container">
+                        <div class="box">
+                            <h3>About us</h3>
+                            <p>The Academy of Motion Picture Arts and Sciences was founded in 1927 and is the world's
+                                preeminent movie-related organization, comprising more than 9,000 accomplished
+                                individuals working in cinema.</p>
+
+                        </div>
+                        <div class="box">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Follow Us</h3>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/TheAcademy/">
+                                            <img src="./icons/facebook.svg" alt="">
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://twitter.com/TheAcademy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                            <img src="./icons/twitter.svg" alt="">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.google.com/search?q=oscar&rlz=1C1RXQR_enIN944IN944&oq=oscar&aqs=chrome..69i60j69i59l3j69i57j46i175i199j69i60j69i61.3446j0j4&sourceid=chrome&ie=UTF-8">
+                                            <img src="./icons/google.svg" alt="">
+                                            <span>Google +</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/theacademy/?hl=en">
+                                            <img src="./icons/instagram.svg" alt="">
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+                <footer class="copyright">
+                    <div>
+                        Copyright © 2021 .All rights reserved by <a href="https://www.instagram.com/codersgyan/">Sahil
+                            Jadhav</a>.
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
