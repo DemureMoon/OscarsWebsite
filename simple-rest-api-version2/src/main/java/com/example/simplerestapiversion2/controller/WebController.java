@@ -23,6 +23,7 @@ public class WebController {
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode root = objectMapper.readTree(new File("src/main/resources/datahubio_oscar_data_json.json"));
 
+        //this is when outputs the response for category, movie title, oscar winning and year
         response.setCategory(root.at("/203/category").asText());
         response.setEntity(root.at("/203/entity").asText());
         response.setWinner(root.at("/203/winner").asText());
