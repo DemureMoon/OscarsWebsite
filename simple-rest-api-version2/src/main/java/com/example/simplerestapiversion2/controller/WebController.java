@@ -9,25 +9,32 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 //import com.example.simplerestapis.models.SampleResponse;
 
 @RestController
 public class WebController {
 
-    //only works if movie title is specified in this portion of code
-    //Query search: http://localhost:8080/Oscars?movie/"movie name"
+    //if no movie specified, picks a random one
+    //Query search: http://localhost:8080/Oscars?movie/
     @RequestMapping("/Oscars")
-    public SampleResponse Oscars(@RequestParam(value = "movie/Bad Girl", defaultValue = "empty query") String movie)
+    public SampleResponse Oscars(@RequestParam(value = "movie/", defaultValue = "empty query") String movie)
             throws IOException {
         SampleResponse response = new SampleResponse();
         ObjectMapper objectMapper = new ObjectMapper();
-        JsonNode root = objectMapper.readTree(new File("src/main/resources/datahubio_oscar_data_json.json"));
+        File JsonData = new File ("src/main/resources/datahubio_oscar_data_json.json");
+        JsonNode root = objectMapper.readTree(JsonData);
 
-        //this is when outputs the response for category, movie title, oscar winning and year
-        response.setCategory(root.at("/203/category").asText());
-        response.setEntity(root.at("/203/entity").asText());
-        response.setWinner(root.at("/203/winner").asText());
-        response.setYear(root.at("/203/year").asText());
+        Random randGenerator = new Random();
+        int rand = randGenerator.nextInt(11058);
+        response.setId(rand);
+
+        //this will output a message and then the 4 separate categories from the Json file
+        response.setRandom("**Random movie!!**");
+        response.setCategory(root.at("/" +rand+ "/category").asText());
+        response.setEntity(root.at("/" +rand+ "/entity").asText());
+        response.setWinner(root.at("/" +rand+ "/winner").asText());
+        response.setYear(root.at("/" +rand+ "/year").asText());
         return response;
 
     }
