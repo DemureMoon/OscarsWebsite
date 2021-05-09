@@ -1,20 +1,11 @@
 package com.example.simplerestapiversion2.models;
 
 public class SampleResponse {
-    private String random;
     private String category;
     private String entity;
     private String winner;
     private String year;
     private long id;
-
-    //random movie pick
-    public String getRandom() {
-        return random;
-    }
-    public void setRandom(String random) {
-        this.random = random;
-    }
 
     //id
     public long getId() {
