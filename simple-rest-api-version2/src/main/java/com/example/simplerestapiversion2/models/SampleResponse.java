@@ -46,8 +46,4 @@ public class SampleResponse {
     public void setYear(String year) {
         this.year = year;
     }
-
-
-
-
-}
+}//end SampleResponse class

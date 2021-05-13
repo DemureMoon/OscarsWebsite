@@ -24,6 +24,7 @@ public class WebController {
 
         //search by entity, year, category and winner
         for ( int i = 0; i < 11058; i++) {
+            //title search
             if (search.equals(root.at("/" +i+ "/entity").asText())) {
                 response.setId(i);
                 response.setCategory(root.at("/" +i+ "/category").asText());
@@ -31,6 +32,7 @@ public class WebController {
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
             }
+            //year search
             else if (search.equals(root.at("/" +i+ "/year").asText())) {
                 response.setId(i);
                 response.setCategory(root.at("/" +i+ "/category").asText());
@@ -38,6 +40,7 @@ public class WebController {
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
             }
+            //winner: true or false search
             else if (search.equals(root.at("/" +i+ "/winner").asText())) {
                 response.setId(i);
                 response.setCategory(root.at("/" +i+ "/category").asText());
@@ -45,6 +48,7 @@ public class WebController {
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
             }
+            //category search
             else if (search.equals(root.at("/" +i+ "/category").asText())) {
                 response.setId(i);
                 response.setCategory(root.at("/" +i+ "/category").asText());
@@ -54,5 +58,5 @@ public class WebController {
             }
         }
         return response;
-    }
-}
+    }//end Oscars method
+}//end WebController class
