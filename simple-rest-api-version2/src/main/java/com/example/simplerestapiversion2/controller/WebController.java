@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 
 @RestController
 public class WebController {
@@ -31,6 +32,7 @@ public class WebController {
                 response.setEntity(root.at("/" +i+ "/entity").asText());
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
+                return response;
             }
             //year search
             else if (search.equals(root.at("/" +i+ "/year").asText())) {
@@ -39,6 +41,7 @@ public class WebController {
                 response.setEntity(root.at("/" +i+ "/entity").asText());
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
+                return response;
             }
             //winner: true or false search
             else if (search.equals(root.at("/" +i+ "/winner").asText())) {
@@ -47,6 +50,7 @@ public class WebController {
                 response.setEntity(root.at("/" +i+ "/entity").asText());
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
+                return response;
             }
             //category search
             else if (search.equals(root.at("/" +i+ "/category").asText())) {
@@ -55,6 +59,17 @@ public class WebController {
                 response.setEntity(root.at("/" +i+ "/entity").asText());
                 response.setWinner(root.at("/" +i+ "/winner").asText());
                 response.setYear(root.at("/" +i+ "/year").asText());
+                return response;
+            }
+            //if nothing searched, return random movie
+            else {
+                Random randGenerator = new Random();
+                int rand = randGenerator.nextInt(11058);
+                response.setId(rand);
+                response.setCategory(root.at("/" +rand+ "/category").asText());
+                response.setEntity(root.at("/" +rand+ "/entity").asText());
+                response.setWinner(root.at("/" +rand+ "/winner").asText());
+                response.setYear(root.at("/" +rand+ "/year").asText());
             }
         }
         return response;
