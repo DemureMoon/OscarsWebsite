@@ -30,22 +30,28 @@ These main two classes work together to produce the output that the user will se
 
 <h2>Testing</h2>
 
-Next is a series of example searches and the output that is produced:
+Next is a series of **example searches** and the output that is produced:
 
-A. Search for the movie **Tangled**:
+- Search for the movie **Tangled**:
+
 >![Tangled](https://user-images.githubusercontent.com/31836580/118219526-8357d980-b42e-11eb-8a5e-63ba305a0e4d.png)
 
-B. Search for the actor **Leonardo DiCaprio**:
+- Search for the actor **Leonardo DiCaprio**:
+
 >![DiCaprio](https://user-images.githubusercontent.com/31836580/118219557-97034000-b42e-11eb-811b-a284f60dc0af.png)
 
-C.Search for year **1930**:
+- Search for year **1930**:
+
 >![year](https://user-images.githubusercontent.com/31836580/118219594-a7b3b600-b42e-11eb-96e0-0ecadcad1d33.png)
 
-D.Search by category **best motion picture**:
+- Search by category **best motion picture**:
+
 >![best motion picture](https://user-images.githubusercontent.com/31836580/118219619-b4380e80-b42e-11eb-88d0-54198027f614.png)
 
-E.Search for award **winner**:
+- Search for award **winner**:
+
 >![true](https://user-images.githubusercontent.com/31836580/118219637-bf8b3a00-b42e-11eb-96ca-9d3f64445f59.png)
 
-F.Example of a random movie provided when nothing is searched for. If the page is reloaded, a new random movie or actor will appear each time.
+- Example of a **random movie** provided when nothing is searched for. If the page is reloaded, a new random movie or actor will appear each time.
+
 >![nothing searched](https://user-images.githubusercontent.com/31836580/118220361-5b697580-b430-11eb-8f1e-b96948a86b9f.png)
