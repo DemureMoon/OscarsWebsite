@@ -1,5 +1,5 @@
-- Version 2 is the most up to date and currently works
 
-- This folder has all the controller based code for the searching function --> OscarsWebsite/simple-rest-api-version2/src/main/java/com/example/simplerestapiversion2/controller/WebController.java
+![Project Folder](https://user-images.githubusercontent.com/31836580/118216392-4688e400-b428-11eb-9215-e47c2f832647.png)
+Here is the basic overview of the files used for the API. It was created using Springboot and Maven and it displays to localhost:8080. The main classes where code has been added and edited are WebController, SampleResponse and SimpleRestApiVersion2Application. The dataset where all the oscar movies are stored is in the resources file.
 
-- You can search for movie title, year, category and weather or not it is an Oscar winner but it only returns one movie from the dataset
+Below this is the beginning of the WebController class. The mapping is set to /Oscars so whenever the user types /Oscars? in the URL, the program will then get the search value that is entered afterwards.The request parameter is set to “search” so when the user types this in the url it will take their input and then look through the json file for the matching string.
