@@ -18,3 +18,37 @@ However if no search parameter is specified, the program will pick and return a 
 
 This part of the program is in the **SampleResponse** class and it sets up the fields that are going to be searched for and provided. For each field, there is a *get* and *set* method that will set the field to a specified value in the dataset and return it when called from the **WebController** class.
 >![SampleResponse class](https://user-images.githubusercontent.com/31836580/118219188-d4b39900-b42d-11eb-91c6-51561822a58f.png)
+
+These main two classes work together to produce the output that the user will see after their search. But in order to load the webpage on **localhost**, the program needs to be running from the command line. Below is a screenshot of the terminal and what needs to be entered in order to start the program that will allow for it to be viewed on **localhost:8080**. The user will be able to search for movies or actors as long as the program is running in the background.
+>![application run](https://user-images.githubusercontent.com/31836580/118219426-4f7cb400-b42e-11eb-84bd-a6c835f8c940.png)
+
+<h2>Testing</h2>
+
+Next is a series of example searches and the output that is produced:
+A. Search for the movie **Tangled**:
+>![Tangled](https://user-images.githubusercontent.com/31836580/118219526-8357d980-b42e-11eb-8a5e-63ba305a0e4d.png)
+
+B. Search for the actor **Leonardo DiCaprio**:
+>![DiCaprio](https://user-images.githubusercontent.com/31836580/118219557-97034000-b42e-11eb-811b-a284f60dc0af.png)
+
+C.Search for year **1930**:
+>![year](https://user-images.githubusercontent.com/31836580/118219594-a7b3b600-b42e-11eb-96e0-0ecadcad1d33.png)
+
+D.Search by category **best motion picture**:
+>![best motion picture](https://user-images.githubusercontent.com/31836580/118219619-b4380e80-b42e-11eb-88d0-54198027f614.png)
+
+E.Search for award **winner**:
+>![true](https://user-images.githubusercontent.com/31836580/118219637-bf8b3a00-b42e-11eb-96ca-9d3f64445f59.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
