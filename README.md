@@ -6,7 +6,7 @@
 
 <h2>Project Files</h2>
 
-Here is the basic overview of the files used for the API. It was created using **Springboot** and **Maven** and it displays to **localhost:8080**. The main classes where code has been added and edited are **WebController**, **SampleResponse** and **SimpleRestApiVersion2Application**. The JSON dataset file where all the oscar movies and actrs are stored is in the **resources** folder.
+Here is the basic overview of the files used for the API. It was created using **Springboot** and **Maven** and it displays to **localhost:8080**. The main classes where code has been added and edited are **WebController**, **SampleResponse** and **SimpleRestApiVersion2Application**. The JSON dataset file where all the oscar movies and actors are stored is in the **resources** folder.
 >![Project Folder](https://user-images.githubusercontent.com/31836580/118218908-3e7f7300-b42d-11eb-8306-5a76488ce1b9.png)
 
 <h2>WebController class</h2>
